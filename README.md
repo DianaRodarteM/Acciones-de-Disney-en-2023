@@ -1,2 +1,3 @@
 # Acciones-de-Disney-en-2023
 Se utilizan los precios de cierre diario de las acciones de Disney para pronosticar el mes de Abril 2023.
+El proyecto modeló el precio de cierre de Disney (DIS) con 61 datos diarios de enero a marzo de 2023 (70% entrenamiento, 30% validación) para pronosticar abril de 2023. Tras revisar la PACF y comparar modelos AR(1) a AR(15), AIC y BIC eligieron el AR(15), pero su desempeño en validación fue malo (MAPE = 8.6%, R² = -14.4): proyectó una subida hasta ~107 dólares cuando el precio real se mantuvo entre 93 y 100. Probablemente hubo sobreajuste (15 rezagos con solo 42 datos), por lo que el pronóstico de abril debe tomarse con cautela.
